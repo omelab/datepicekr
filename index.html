@@ -1,0 +1,57 @@
+<html lang="en" class=""><head>
+<meta charset="UTF-8">
+<title>DatePicker Demo</title>
+<meta name="robots" content="noindex">
+<link rel="shortcut icon" type="image/x-icon" href="fevicon.ico">
+ 
+<link rel="stylesheet" href="bootstrap-datepicker.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+2<div class="wrapper">
+<label>
+<input type="text" required="required">
+<span>Name</span>
+</label>
+<label>
+
+<input type="text" class="dateselect" required="required">
+<span>Date</span>
+</label>
+<label>
+<input type="text" class="dateselect2" required="required">
+<span>Date</span>
+</label>
+</div> 
+<script src="jquery.min.js"></script>
+<script src="bootstrap-datepicker.min.js"></script>
+<script>
+  // https://github.com/uxsolutions/bootstrap-datepicker
+
+  $('.dateselect').datepicker({
+    format: 'mm/dd/yyyy'
+    startDate: '-3d'
+  });
+
+  $('.dateselect2').datepicker({
+    format: 'mm/dd/yyyy',
+    autoclose:true,
+    todayHighlidht: true,
+    }).on("hide", function(){
+      //if ($){}
+    }
+
+    /*$('#event_date').datepicker({
+      autoclose: true,
+      format: 'mm/dd/yyyy',
+      daysOfWeekDisabled: "6,0",
+      language: "en"
+      }).on('changeDate', function(e) {
+        console.log('changeDate event trigger');
+    });
+   
+    // Trigger on load or any where 
+    $('#event_date').trigger('changeDate');*/
+  </script>
+</body></html>
